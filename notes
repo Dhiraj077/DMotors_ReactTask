@@ -1,0 +1,7 @@
+Icons:
+     npm install react-icons --save
+
+React typed:
+     npm install react-typed --save
+     # if not install use this below command
+     npm config set legacy-peer-deps true
