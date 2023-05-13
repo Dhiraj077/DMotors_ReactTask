@@ -9,7 +9,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className='flex justify-between items-center h-24 max-w-5xl mx-auto px-4'>
+    <div className='flex justify-between items-center h-24 max-w-5xl mx-auto px-4 '>
       <h1 className='w-full font-extrabold text-3xl text-[#00df9a]'>DGenx</h1>
       <ul className='hidden md:flex'>
         <li className='p-4 text-white hover:text-neutral-300 cursor-pointer'>Home</li>
