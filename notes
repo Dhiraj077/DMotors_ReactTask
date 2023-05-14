@@ -5,3 +5,9 @@ React typed:
      npm install react-typed --save
      # if not install use this below command
      npm config set legacy-peer-deps true
+
+React CounterUp:
+     npm install counterup --save
+
+React Router Dom:
+     npm install react-router-dom     
