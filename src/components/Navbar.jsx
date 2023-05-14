@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false)
@@ -12,13 +13,13 @@ const Navbar = () => {
     <div className='flex justify-between items-center h-24 max-w-5xl mx-auto px-4 '>
       <h1 className='w-full font-extrabold text-3xl text-[#00df9a]'>DGenx</h1>
       <ul className='hidden md:flex'>
-        <li className='p-4 text-white hover:text-neutral-300 cursor-pointer'>Home</li>
-        <li className='p-4 text-white hover:text-neutral-300 cursor-pointer'>Company</li>
-        <li className='p-4 text-white hover:text-neutral-300 cursor-pointer'>Resources</li>
-        <li className='p-4 text-white hover:text-neutral-300 cursor-pointer'>About</li>
-        <li className='p-4 text-white hover:text-neutral-300 cursor-pointer'>Contact</li>
+        <li className='p-4 text-white hover:text-neutral-300 cursor-pointer'><Link to={'/'}>Home</Link></li>
+        <li className='p-4 text-white hover:text-neutral-300 cursor-pointer'><Link to={'/company'}>Company</Link></li>
+        <li className='p-4 text-white hover:text-neutral-300 cursor-pointer'><Link to={'/resources'}>Resources</Link></li>
+        <li className='p-4 text-white hover:text-neutral-300 cursor-pointer'><Link to={'/about'}>About</Link></li>
+        <li className='p-4 text-white hover:text-neutral-300 cursor-pointer'><Link to={'/contact'}>Contact</Link></li>
       </ul>
-      <div onClick={handleNav} className='block md:hidden'>
+      <div onClick={handleNav} className='block md:hidden text-white hover:text-lime-300'>
         {!nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/>}
       </div>
       <div className={!nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-400 bg-slate-600 ease-in-out duration-500 md:hidden' : 'fixed left-[-100%] '}>

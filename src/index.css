@@ -3,5 +3,38 @@
 @tailwind utilities;
 
 body{
-    background-color: darkslategrey;
+    background-color: #224A51;
 }
+
+@layer utilities {
+    .ripple {
+      @apply overflow-hidden relative;
+  
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        opacity: 0.5;
+        background-color: rgba(255, 255, 255, 0.8);
+        animation: rippleEffect 1s linear;
+      }
+  
+      @keyframes rippleEffect {
+        0% {
+          width: 0;
+          height: 0;
+          opacity: 0.5;
+        }
+        100% {
+          width: 300px;
+          height: 300px;
+          opacity: 0;
+        }
+      }
+    }
+  }
