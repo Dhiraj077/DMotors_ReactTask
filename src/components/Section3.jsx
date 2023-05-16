@@ -4,7 +4,7 @@ import backgroundImage from '../images/img_7.png'
 const Section3 = () => {
   return (
     <section class="text-gray-600 body-font" style={{ backgroundImage: `url(${backgroundImage})` }}>
-    <div class="container mx-auto flex px-5 py-16 md:flex-row flex-col items-center">
+    <div class="container mx-auto flex px-5 py-16 md:flex-row flex-col items-center max-w-[1240px]">
       <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
       <img className="object-cover object-center rounded" src={require('../images/img_8.png')} alt="img" />
       </div>

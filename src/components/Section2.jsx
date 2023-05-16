@@ -5,7 +5,7 @@ const Section2 = () => {
   return (
     <section class="text-gray-600 body-font">
       <div class="container px-5 py-24 mx-auto max-w-[1240px]">
-        <div class="flex flex-wrap -m-4 text-center">
+        <div class="flex flex-wrap md:-m-4 text-center">
           <div class="p-4 md:w-1/4 sm:w-1/2 w-full ">
             <div class=" px-4 py-6 rounded-lg">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 mb-3 inline-block text-[#00df9a]">
