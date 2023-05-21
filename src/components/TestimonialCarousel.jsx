@@ -34,14 +34,16 @@ const TestimonialCarousel = () => {
     };
 
     return (
-        <div className="" style={{ backgroundImage: `url(${backgroundImage})` }}>
-            <div className="max-w-[1000px] mx-auto mt-12 transparent" >
-                <div class="mb-12 justify-center text-center">
+        
+        <div className="bg-cover bg-no-repeat h-[820px]" style={{ backgroundImage: `url(${backgroundImage})` }}>
+              <div class=" justify-center text-center">
                     <h2 class="mb-6 md:text-5xl text-4xl font-bold text-neutral-800 dark:text-neutral-200">What Our Clients Say</h2>
 
                     <p class="text-gray-500 mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, laudantium!.</p>
                 </div>
-                <div className="relative ">
+            <div className="md:max-w-[1000px] mx-auto mt-12 transparent" >
+              
+                <div className="relative overflow-hidden h-[500px]">
                     {testimonials.map((testimonial, index) => (
                         <div
                             key={testimonial.id}
@@ -50,7 +52,7 @@ const TestimonialCarousel = () => {
                             <div class="block rounded-lg shadow-lg">
                                 <div class="flex flex-wrap items-center">
                                     <div class="grow-0 shrink-0 basis-auto block lg:flex w-full lg:w-6/12 xl:w-4/12">
-                                        <img src={testimonial.image} className='w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg' alt="" />
+                                        <img src={testimonial.image} className='md:w-full w-64 rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg' alt="" />
                                         {/* <img className="w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg" src={require('../images/img_12.png')} alt="img" /> */}
                                         {/* <img src="https://mdbootstrap.com/img/new/ecommerce/vertical/027.jpg" alt="Trendy Pants and Shoes"
                                         class="w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg" /> */}
@@ -112,10 +114,10 @@ const TestimonialCarousel = () => {
 
                     ))}
                     <div className='absolute bottom-0 left-0 right-0 z-[2] mb-4 flex list-none justify-center p-0'>
-                        <button className="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none" onClick={prevSlide}>
+                        <button className="absolute bottom-0 left-0 top-0 z-[1] flex w-[7%] items-center justify-center border-0 bg-none p-0 text-center font-bold text-white text-lg transition-opacity duration-150 " onClick={prevSlide}>
                             Previous
                         </button>
-                        <button className="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none" onClick={nextSlide}>
+                        <button className="absolute bottom-0 right-0 top-0 z-[1] flex w-[5%] items-center justify-center bg-black p-0 text-center font-bold text-white text-lg transition-opacity duration-150 " onClick={nextSlide}>
                             Next
                         </button>
                     </div>
