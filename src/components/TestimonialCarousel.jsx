@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Images from '../images/img_12.png'
 import Images2 from '../images/img_13.png'
 import backgroundImage from '../images/img_7.png'
+import "./Slider.css";
 
 
 const testimonials = [
@@ -19,11 +20,19 @@ const testimonials = [
         image: Images2,
         message: 'Nullam id eros vitae magna volutpat condimentum sit amet sed lacus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quisquam nam aspernatur eligendi quas labore molestias ut cumque sunt! Quasi omnis quisquam numquam reiciendis ullam harum quaerat in hic sequi. Tempora cupiditate ex exercitationem suscipit, nobis sunt ipsam autem modi architecto maiores omnis assumenda officiis temporibus, mollitia laboriosam! Quibusdam, in.',
     },
+    {
+        id: 3,
+        name: 'John Doe 3',
+        title: 'Biker 3',
+        image: Images,
+        message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quisquam nam aspernatur eligendi quas labore molestias ut cumque sunt! Quasi omnis quisquam numquam reiciendis ullam harum quaerat in hic sequi. Tempora cupiditate ex exercitationem suscipit, nobis sunt ipsam autem modi architecto maiores omnis assumenda officiis temporibus, mollitia laboriosam! Quibusdam, in.',
+    },
     // Add more testimonials as needed
 ];
 
 const TestimonialCarousel = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
+
 
     const prevSlide = () => {
         setCurrentSlide(currentSlide === 0 ? testimonials.length - 1 : currentSlide - 1);
@@ -32,6 +41,19 @@ const TestimonialCarousel = () => {
     const nextSlide = () => {
         setCurrentSlide(currentSlide === testimonials.length - 1 ? 0 : currentSlide + 1);
     };
+
+  
+    const [index, setIndex] = useState(0);
+  
+    useEffect(() => {
+      const lastIndex = testimonials.length - 1;
+      if (index < 0) {
+        setIndex(lastIndex);
+      }
+      if (index > lastIndex) {
+        setIndex(0);
+      }
+    }, [index, testimonials]);
 
     return (
         
@@ -43,19 +65,17 @@ const TestimonialCarousel = () => {
                 </div>
             <div className="md:max-w-[1000px] mx-auto mt-12 transparent" >
               
-                <div className="relative overflow-hidden h-[500px]">
-                    {testimonials.map((testimonial, index) => (
+                {/* <div className="relative overflow-hidden h-[500px]">
+                    {
+                    testimonials.map((testimonial, index) => (
                         <div
                             key={testimonial.id}
-                            className={`absolute w-full transform transition-transform ease-in-out duration-300 ${index === currentSlide ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full'
+                            className={`absolute w-full transform transition-transform ease-in duration-300 ${index === currentSlide ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full'
                                 }`}>
                             <div class="block rounded-lg shadow-lg">
                                 <div class="flex flex-wrap items-center">
                                     <div class="grow-0 shrink-0 basis-auto block lg:flex w-full lg:w-6/12 xl:w-4/12">
                                         <img src={testimonial.image} className='md:w-full w-64 rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg' alt="" />
-                                        {/* <img className="w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg" src={require('../images/img_12.png')} alt="img" /> */}
-                                        {/* <img src="https://mdbootstrap.com/img/new/ecommerce/vertical/027.jpg" alt="Trendy Pants and Shoes"
-                                        class="w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg" /> */}
                                     </div>
                                     <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 xl:w-8/12">
                                         <div class="px-6 py-12 md:px-12">
@@ -112,7 +132,8 @@ const TestimonialCarousel = () => {
 
                         </div>
 
-                    ))}
+                    ))
+                    }
                     <div className='absolute bottom-0 left-0 right-0 z-[2] mb-4 flex list-none justify-center p-0'>
                         <button className="absolute bottom-0 left-0 top-0 z-[1] flex w-[7%] items-center justify-center border-0 bg-none p-0 text-center font-bold text-white text-lg transition-opacity duration-150 " onClick={prevSlide}>
                             Previous
@@ -122,7 +143,36 @@ const TestimonialCarousel = () => {
                         </button>
                     </div>
 
-                </div>
+                </div> */}
+
+         <div className="section-center">
+        {testimonials.map((item, indexPeople) => {
+          const { id, name, title, image, message } = item;
+          let position = "nextSlide";
+          if (indexPeople === index) {
+            position = "activeSlide";
+          }
+          if ( indexPeople === index - 1 ||  (index === 0 && indexPeople === testimonials.length - 1)) {
+             position = "lastSlide";
+          }
+          return (
+            <article className={position} key={id}>
+              <img src={image} alt={name} className="person-img" />
+              <h4>{name}</h4>
+              <p className="title">{title}</p>
+              <p className="text">{message }</p>
+            </article>
+          );
+        })}
+        <button className="prev" onClick={() => setIndex(index - 1)}>
+         <div className="a">P</div>
+        </button>
+        <button className="next" onClick={() => setIndex(index + 1)}>
+        <div className="a">N</div>
+        </button>
+          </div>
+
+
             </div>
         </div>
 

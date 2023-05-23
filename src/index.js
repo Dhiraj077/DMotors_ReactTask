@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import Resources from "./pages/Resources";
 import About from "./pages/about";
 import Company from './pages/company';
+import Test from './pages/test';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
     path: "resources",
     element: <Resources/>,
   },
+  {
+    path: "test",
+    element: <Test/>,
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

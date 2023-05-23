@@ -4,10 +4,8 @@ import backgroundImage from '../images/img_5.jpg';
 
 const Hero = () => {
     return (
-        <div
-            className="bg-cover bg-center "
-            style={{ backgroundImage: `url(${backgroundImage})` }}
-        >
+        <div className="bg-cover bg-center "
+            style={{ backgroundImage: `url(${backgroundImage})` }}>
             <div className='text-white'>
                 <div className='max-w-[800px]  w-full h-screen mx-auto text-center flex flex-col justify-center'>
                     <p className='text-[#00df9a] font-extrabold p-2'>Custom Bike Builder</p>
@@ -19,7 +17,6 @@ const Hero = () => {
                     <p className='p-2'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, sed! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, assumenda?</p>
                     <button className='border-white border-2 rounded-md font-medium mx-auto my-6 p-2 hover:bg-white hover:text-[#00df9a] uppercase'>cheak our works</button>
                 </div>
-               
             </div>
         </div>
     )

@@ -18,9 +18,10 @@ const Navbar = () => {
         <li className='p-4 text-white hover:text-neutral-300 cursor-pointer'><Link to={'/resources'}>Resources</Link></li>
         <li className='p-4 text-white hover:text-neutral-300 cursor-pointer'><Link to={'/about'}>About</Link></li>
         <li className='p-4 text-white hover:text-neutral-300 cursor-pointer'><Link to={'/contact'}>Contact</Link></li>
+        <li className='p-4 text-white hover:text-neutral-300 cursor-pointer'><Link to={'/test'}>Test</Link></li>
       </ul>
       <div onClick={handleNav} className='block md:hidden text-white hover:text-lime-300'>
-        {!nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/>}
+        {nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/>}
       </div>
       <div className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-400 bg-slate-600 ease-in-out duration-500 md:hidden' : 'fixed left-[-100%] '}>
       <h1 className='w-full font-extrabold text-3xl text-[#00df9a] m-6'>DGenx</h1>
