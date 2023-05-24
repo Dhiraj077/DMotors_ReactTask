@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Images from '../images/img_12.png'
 import Images2 from '../images/img_13.png'
 import backgroundImage from '../images/img_7.png'
-import "./Slider.css";
+// import "./Slider.css";
+import "./test.css";
 
 
 const testimonials = [
@@ -34,13 +35,13 @@ const TestimonialCarousel = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
 
-    const prevSlide = () => {
-        setCurrentSlide(currentSlide === 0 ? testimonials.length - 1 : currentSlide - 1);
-    };
+    // const prevSlide = () => {
+    //     setCurrentSlide(currentSlide === 0 ? testimonials.length - 1 : currentSlide - 1);
+    // };
 
-    const nextSlide = () => {
-        setCurrentSlide(currentSlide === testimonials.length - 1 ? 0 : currentSlide + 1);
-    };
+    // const nextSlide = () => {
+    //     setCurrentSlide(currentSlide === testimonials.length - 1 ? 0 : currentSlide + 1);
+    // };
 
   
     const [index, setIndex] = useState(0);
@@ -65,23 +66,30 @@ const TestimonialCarousel = () => {
                 </div>
             <div className="md:max-w-[1000px] mx-auto mt-12 transparent" >
               
-                {/* <div className="relative overflow-hidden h-[500px]">
-                    {
-                    testimonials.map((testimonial, index) => (
-                        <div
-                            key={testimonial.id}
-                            className={`absolute w-full transform transition-transform ease-in duration-300 ${index === currentSlide ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full'
-                                }`}>
+                <div className="relative overflow-hidden h-[500px] section-center">
+                    { testimonials.map((item, indexPeople) => {
+                        const { id, name, title, image, message } = item;
+                        let position = "nextSlide";
+
+                        if (indexPeople === index) {
+                            position = "activeSlide";
+                        }
+                        if ( indexPeople === index - 1 ||  (index === 0 && indexPeople === testimonials.length - 1)) {
+                            position = "lastSlide";
+                        }
+                        return (
+                            <article className={position}>
+                        <div>
                             <div class="block rounded-lg shadow-lg">
                                 <div class="flex flex-wrap items-center">
                                     <div class="grow-0 shrink-0 basis-auto block lg:flex w-full lg:w-6/12 xl:w-4/12">
-                                        <img src={testimonial.image} className='md:w-full w-64 rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg' alt="" />
+                                        <img src={image} className='md:w-full w-64 rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg' alt="" />
                                     </div>
                                     <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 xl:w-8/12">
                                         <div class="px-6 py-12 md:px-12">
-                                            <h2 class="text-3xl font-bold mb-2 text-blue-600">{testimonial.name}</h2>
-                                            <p class="font-semibold mb-4">{testimonial.title}</p>
-                                            <p class="text-gray-500 mb-6">{testimonial.message}
+                                            <h2 class="text-3xl font-bold mb-2 text-blue-600">{name}</h2>
+                                            <p class="font-semibold mb-4">{title}</p>
+                                            <p class="text-gray-500 mb-6">{message}
                                             </p>
                                             <ul class="flex justify-center md:justify-start">
                                                 <li>
@@ -131,24 +139,27 @@ const TestimonialCarousel = () => {
                             </div>
 
                         </div>
+                        </article>
 
-                    ))
-                    }
+                    )})}
                     <div className='absolute bottom-0 left-0 right-0 z-[2] mb-4 flex list-none justify-center p-0'>
-                        <button className="absolute bottom-0 left-0 top-0 z-[1] flex w-[7%] items-center justify-center border-0 bg-none p-0 text-center font-bold text-white text-lg transition-opacity duration-150 " onClick={prevSlide}>
+                        <button  onClick={() => setIndex(index - 1)}
+                        className="absolute bottom-0 left-0 top-0 z-[1] flex w-[7%] items-center justify-center border-0 bg-none p-0 text-center font-bold text-white text-lg transition-opacity duration-150 " >
                             Previous
                         </button>
-                        <button className="absolute bottom-0 right-0 top-0 z-[1] flex w-[5%] items-center justify-center bg-black p-0 text-center font-bold text-white text-lg transition-opacity duration-150 " onClick={nextSlide}>
+                        <button onClick={() => setIndex(index + 1)} 
+                        className="absolute bottom-0 right-0 top-0 z-[1] flex w-[5%] items-center justify-center bg-black p-0 text-center font-bold text-white text-lg transition-opacity duration-150 ">
                             Next
                         </button>
                     </div>
 
-                </div> */}
+                </div>
 
-         <div className="section-center">
+         {/* <div className="section-center">
         {testimonials.map((item, indexPeople) => {
           const { id, name, title, image, message } = item;
           let position = "nextSlide";
+
           if (indexPeople === index) {
             position = "activeSlide";
           }
@@ -164,13 +175,14 @@ const TestimonialCarousel = () => {
             </article>
           );
         })}
+
         <button className="prev" onClick={() => setIndex(index - 1)}>
          <div className="a">P</div>
         </button>
         <button className="next" onClick={() => setIndex(index + 1)}>
         <div className="a">N</div>
         </button>
-          </div>
+          </div> */}
 
 
             </div>
