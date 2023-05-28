@@ -129,23 +129,23 @@ const Footer = () => {
                         <div class="">
                             <h6
                                 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
-                                Products
+                                Services
                             </h6>
                             <p class="mb-4">
                                 <a href="#!" class="text-neutral-600 dark:text-neutral-200"
-                                >Angular</a>
+                                >Bike Modifying</a>
                             </p>
                             <p class="mb-4">
                                 <a href="#!" class="text-neutral-600 dark:text-neutral-200"
-                                >React</a>
+                                >Maintenance</a>
                             </p>
                             <p class="mb-4">
                                 <a href="#!" class="text-neutral-600 dark:text-neutral-200"
-                                >Vue</a>
+                                >Accessories</a>
                             </p>
                             <p>
                                 <a href="#!" class="text-neutral-600 dark:text-neutral-200"
-                                >Laravel</a>
+                                >Custom Build</a>
                             </p>
                         </div>
                         <div class="">

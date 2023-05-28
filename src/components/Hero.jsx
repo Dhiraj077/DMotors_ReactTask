@@ -1,9 +1,18 @@
 import React from 'react'
 import Typed from "react-typed";
 import backgroundImage from '../images/img_5.jpg';
+import Section1 from './Section1';
+import Section2 from './Section2';
+import Section3 from './Section3';
+import Section4 from './section4';
+import Section5 from './section5';
+import Section6 from './Section6';
+import Section7 from './Section7';
+import TestimonialCarousel from './TestimonialCarousel';
 
 const Hero = () => {
     return (
+        <>
         <div className="bg-cover bg-center "
             style={{ backgroundImage: `url(${backgroundImage})` }}>
             <div className='text-white'>
@@ -19,6 +28,15 @@ const Hero = () => {
                 </div>
             </div>
         </div>
+            <Section1 />
+            <Section2 />
+            <Section3 />
+            <Section4 />
+            <TestimonialCarousel />
+            <Section5 />
+            <Section6 />
+            <Section7 />
+            </>
     )
 }
 

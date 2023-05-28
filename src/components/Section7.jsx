@@ -6,7 +6,7 @@ const Section7 = () => {
         <div>
             <div class=" px-6 mx-auto bg-cover bg-no-repeat" style={{ backgroundImage: `url(${backgroundImage})` }}>
 
-                <section class=" background-radial-gradient ">
+                <section class=" ">
 
                     <div class="px-6 py-12 md:px-12 text-center lg:text-left">
                         <div class="container mx-auto xl:px-32">
