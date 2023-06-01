@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Images from '../images/img_12.png'
 import Images2 from '../images/img_13.png'
 import backgroundImage from '../images/img_7.png'
+import Images3 from '../images/img_28.png'
 // import "./Slider.css";
 import "./test.css";
 
@@ -25,7 +26,7 @@ const testimonials = [
         id: 3,
         name: 'John Doe 3',
         title: 'Biker 3',
-        image: Images,
+        image: Images3,
         message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quisquam nam aspernatur eligendi quas labore molestias ut cumque sunt! Quasi omnis quisquam numquam reiciendis ullam harum quaerat in hic sequi. Tempora cupiditate ex exercitationem suscipit, nobis sunt ipsam autem modi architecto maiores omnis assumenda officiis temporibus, mollitia laboriosam! Quibusdam, in.',
     },
     // Add more testimonials as needed

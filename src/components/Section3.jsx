@@ -14,7 +14,7 @@ const Section3 = () => {
         </h1>
         <p class="mb-8 leading-relaxed text-gray-800 font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eos quis porro, corrupti fugit adipisci vitae, sit fuga velit exercitationem molestias inventore saepe. Sint eveniet nesciunt alias libero qui ratione?</p>
         <div class="flex justify-center">
-          <button class="inline-flex text-white bg-[#00df9a] border-0 py-2 px-6 focus:outline-none hover:bg-green-400 rounded text-lg">learn more</button>
+          <button class="inline-flex text-white bg-[#00df9a] border-0 py-2 px-6 focus:outline-none hover:bg-yellow-500 rounded text-lg">learn more</button>
         </div>
       </div>
     </div>
