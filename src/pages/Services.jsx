@@ -16,7 +16,7 @@ const Services = () => {
                         <div class="flex flex-wrap">
                             <div class="grow-0 shrink-0 basis-auto w-full lg:w-5/12 mb-12 lg:mb-0 ">
                                 <div class="flex lg:py-12 ">
-                                    <img className=" w-full rounded-lg shadow-lg z-10 ml-12" src={require('../images/img_24.jpg')} alt="img" />
+                                    <img className=" w-full md:item-center rounded-lg shadow-lg z-10 ml-12" src={require('../images/img_24.jpg')} alt="img" />
                                 </div>
                             </div>
 
