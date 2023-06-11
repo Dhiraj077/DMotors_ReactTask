@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import backgroundImage from '../images/img_7.png'
 import Section2 from '../components/Section2'
 import Section7 from '../components/Section7'
+import { Link } from 'react-router-dom';
 
 const Services = () => {
     return (
@@ -128,34 +129,34 @@ const Services = () => {
                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti facilis molestiae, aspernatur iste maiores cupiditate eligendi dicta nesciunt dignissimos nisi!
                                 </p>
                                 <p class="flex items-center hover:text-lime-500 mb-2 text-white">
-                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center hover:bg-lime-500 justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                             <path d="M20 6L9 17l-5-5"></path>
                                         </svg>
                                     </span>Vexillologist pitchfork
                                 </p>
                                 <p class="flex items-center hover:text-lime-500 mb-2 text-white">
-                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center hover:bg-lime-500 justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                             <path d="M20 6L9 17l-5-5"></path>
                                         </svg>
                                     </span>Tumeric plaid portland
                                 </p>
                                 <p class="flex items-center hover:text-lime-500 mb-2 text-white">
-                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center hover:bg-lime-500 justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                             <path d="M20 6L9 17l-5-5"></path>
                                         </svg>
                                     </span>Hexagon neutra unicorn
                                 </p>
                                 <p class="flex items-center hover:text-lime-500 mb-6 text-white">
-                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center hover:bg-lime-500 justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                             <path d="M20 6L9 17l-5-5"></path>
                                         </svg>
                                     </span>Mixtape chillwave tumeric
                                 </p>
-                                <button class="flex items-center mt-auto font-semibold text-yellow-500 border-0  px-4  focus:outline-none  rounded">Check Our Work
+                                <button class="flex items-center mt-auto font-semibold text-yellow-500 border-0  px-4  focus:outline-none  rounded"><Link to={'/about'}>check our work</Link>
                                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                                     </svg>
@@ -176,37 +177,37 @@ const Services = () => {
                             <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6">
                                 <h3 class="text-3xl text-[#00df9a] font-bold mb-4 font-mono">Maintenance</h3>
                                 <p class="text-white mb-6">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero dolores, fugiat porro repellat incidunt illo magni suscipit similique eveniet, 
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero dolores, fugiat porro repellat incidunt illo magni suscipit similique eveniet,
                                 </p>
-                                 <p class="flex items-center hover:text-lime-500 mb-2 text-white">
-                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                <p class="flex items-center hover:text-lime-500 mb-2 text-white">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center hover:bg-lime-500 justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                             <path d="M20 6L9 17l-5-5"></path>
                                         </svg>
                                     </span>Vexillologist pitchfork
                                 </p>
                                 <p class="flex items-center hover:text-lime-500 mb-2 text-white">
-                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center hover:bg-lime-500 justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                             <path d="M20 6L9 17l-5-5"></path>
                                         </svg>
                                     </span>Tumeric plaid portland
                                 </p>
                                 <p class="flex items-center hover:text-lime-500 mb-2 text-white">
-                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center hover:bg-lime-500 justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                             <path d="M20 6L9 17l-5-5"></path>
                                         </svg>
                                     </span>Hexagon neutra unicorn
                                 </p>
                                 <p class="flex items-center hover:text-lime-500 mb-6 text-white">
-                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center hover:bg-lime-500 justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                             <path d="M20 6L9 17l-5-5"></path>
                                         </svg>
                                     </span>Mixtape chillwave tumeric
                                 </p>
-                                <button class="flex items-center mt-auto font-semibold text-yellow-500 border-0  px-4  focus:outline-none  rounded">Check Our Work
+                                <button class="flex items-center mt-auto font-semibold text-yellow-500 border-0  px-4  focus:outline-none  rounded"><Link to={'/about'}>check our work</Link>
                                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                                     </svg>
@@ -230,35 +231,35 @@ const Services = () => {
                                 <p class="text-white mb-6">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit sed ipsam quos culpa maiores aliquam magnam. Doloremque sunt distinctio nam minus itaque,
                                 </p>
-                                 <p class="flex items-center hover:text-lime-500 mb-2 text-white">
-                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                <p class="flex items-center hover:text-lime-500 mb-2 text-white">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center hover:bg-lime-500 justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                             <path d="M20 6L9 17l-5-5"></path>
                                         </svg>
                                     </span>Vexillologist pitchfork
                                 </p>
                                 <p class="flex items-center hover:text-lime-500 mb-2 text-white">
-                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center hover:bg-lime-500  justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                             <path d="M20 6L9 17l-5-5"></path>
                                         </svg>
                                     </span>Tumeric plaid portland
                                 </p>
                                 <p class="flex items-center hover:text-lime-500 mb-2 text-white">
-                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center hover:bg-lime-500 justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                             <path d="M20 6L9 17l-5-5"></path>
                                         </svg>
                                     </span>Hexagon neutra unicorn
                                 </p>
                                 <p class="flex items-center hover:text-lime-500 mb-6 text-white">
-                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center hover:bg-lime-500 justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                             <path d="M20 6L9 17l-5-5"></path>
                                         </svg>
                                     </span>Mixtape chillwave tumeric
                                 </p>
-                                <button class="flex items-center mt-auto font-semibold text-yellow-500 border-0  px-4  focus:outline-none  rounded">Check Our Work
+                                <button class="flex items-center mt-auto font-semibold text-yellow-500 border-0  px-4  focus:outline-none  rounded"><Link to={'/about'}>check our work</Link>
                                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                                     </svg>
@@ -280,37 +281,37 @@ const Services = () => {
                             <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6">
                                 <h3 class="text-3xl text-[#00df9a] font-bold mb-4 font-mono">Custom Build</h3>
                                 <p class="text-white mb-6">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatibus ipsum nemo rem mollitia facere magnam, a aperiam accusantium libero. 
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatibus ipsum nemo rem mollitia facere magnam, a aperiam accusantium libero.
                                 </p>
-                                 <p class="flex items-center hover:text-lime-500 mb-2 text-white">
-                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                <p class="flex items-center hover:text-lime-500 mb-2 text-white">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center hover:bg-lime-500 justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                             <path d="M20 6L9 17l-5-5"></path>
                                         </svg>
                                     </span>Vexillologist pitchfork
                                 </p>
                                 <p class="flex items-center hover:text-lime-500 mb-2 text-white">
-                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center hover:bg-lime-500 justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                             <path d="M20 6L9 17l-5-5"></path>
                                         </svg>
                                     </span>Tumeric plaid portland
                                 </p>
                                 <p class="flex items-center hover:text-lime-500 mb-2 text-white">
-                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center hover:bg-lime-500 justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                             <path d="M20 6L9 17l-5-5"></path>
                                         </svg>
                                     </span>Hexagon neutra unicorn
                                 </p>
                                 <p class="flex items-center hover:text-lime-500 mb-6 text-white">
-                                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                    <span class="w-4 h-4 mr-2 inline-flex items-center hover:bg-lime-500  justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                             <path d="M20 6L9 17l-5-5"></path>
                                         </svg>
                                     </span>Mixtape chillwave tumeric
                                 </p>
-                                <button class="flex items-center mt-auto font-semibold text-yellow-500 border-0  px-4  focus:outline-none  rounded">Check Our Work
+                                <button class="flex items-center mt-auto font-semibold text-yellow-500 border-0  px-4  focus:outline-none  rounded"><Link to={'/about'}>check our work</Link>
                                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                                     </svg>

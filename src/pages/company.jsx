@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import Section7 from '../components/Section7'
 
 const company = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -139,13 +140,13 @@ const company = () => {
                 </div>
               </div>
 
-              <div class="animate-fade-in-down">
-                <div class="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-gradient-to-r from-amber-700 to-yellow-400">
-                  <div class="flex justify-center">
-                    <div class="-mt-8 inline-block rounded-full bg-primary-100 p-4 text-primary shadow-md">
+              <div className="animate-fade-in-down">
+                <div className="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-gradient-to-r from-amber-700 to-yellow-400">
+                  <div className="flex justify-center">
+                    <div className="-mt-8 inline-block rounded-full bg-primary-100 p-4 text-primary shadow-md">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 text-[#00df9a]">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 01-.657.643 48.39 48.39 0 01-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 01-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 00-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 01-.642 5.056c1.518.19 3.058.309 4.63.349a.64.64 0 01.643.658v0c0 .355-.186.676-.401.959a1.647 1.647 0 00-.349 1.003c0 1.036 1.007 1.875 2.25 1.875s2.25-.84 2.25-1.875c0-.369-.128-.713-.349-1.003a1.752 1.752 0 00-.401-.959c-.025-.31.222-.57.532-.57 1.572-.04 3.112-.159 4.63-.349a.64.64 0 01.643.658v0a.64.64 0 01-.658.643c-1.548-.009-3.098-.128-4.63-.33-.283-.038-.543-.283-.519-.591v0z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a.75.75 0 00-1.5 0 .75.75 0 001.5 0zM12 10.5a.75.75 0 00-1.5 0 .75.75 0 001.5 0zM9 10.5a.75.75 0 00-1.5 0 .75.75 0 001.5 0z" />
+Name                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a.75.75 0 00-1.5 0 .75.75 0 001.5 0zM12 10.5a.75.75 0 00-1.5 0 .75.75 0 001.5 0zM9 10.5a.75.75 0 00-1.5 0 .75.75 0 001.5 0z" />
                       </svg>
                     </div>
                   </div>
@@ -159,7 +160,6 @@ const company = () => {
               </div>
             </div>
           </section>
-
           <section class="text-gray-600 body-font">
             <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
               <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
@@ -191,6 +191,7 @@ const company = () => {
             </div>
           </section>
         </div>
+        <Section7></Section7>
       </div>
       <Footer></Footer>
     </div>

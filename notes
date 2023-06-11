@@ -11,3 +11,7 @@ React CounterUp:
 
 React Router Dom:
      npm install react-router-dom     
+
+React-carousel:
+     npm install react-slick slick-carousel
+     

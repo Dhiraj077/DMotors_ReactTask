@@ -1,6 +1,7 @@
 import React from 'react'
 import backgroundImage from '../images/img_6.png'
 
+
 const Section1 = () => {
     return (
         <div className='w-full  py-16 px-4' style={{ backgroundImage: `url(${backgroundImage})` }}>

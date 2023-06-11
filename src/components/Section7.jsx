@@ -4,7 +4,7 @@ import backgroundImage from '../images/img_17.jpg'
 const Section7 = () => {
     return (
         <div>
-            <div class=" px-6 mx-auto bg-cover bg-no-repeat" style={{ backgroundImage: `url(${backgroundImage})` }}>
+            <div class=" px-6 mx-auto md:bg-cover bg-auto bg-no-repeat" style={{ backgroundImage: `url(${backgroundImage})` }}>
 
                 <section class=" ">
 

@@ -8,6 +8,7 @@ import About from "./pages/about";
 import Company from './pages/company';
 import Test from './pages/test';
 import Services from './pages/Services';
+import Custom from './pages/custom'
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
   {
     path: "test",
     element: <Test/>,
+  },
+  {
+    path: "custom",
+    element: <Custom/>,
   }
 ]);
 

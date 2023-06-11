@@ -19,6 +19,7 @@ const Navbar = () => {
         <li className='p-4 text-white hover:text-neutral-300 cursor-pointer'><Link to={'/about'}>About</Link></li>
         <li className='p-4 text-white hover:text-neutral-300 cursor-pointer'><Link to={'/contact'}>Contact</Link></li>
         <li className='p-4 text-white hover:text-neutral-300 cursor-pointer'><Link to={'/test'}>Test</Link></li>
+        <li className='p-4 text-white hover:text-neutral-300 cursor-pointer'><Link to={'/custom'}>custom</Link></li>
       </ul>
       <div onClick={handleNav} className='block md:hidden text-white hover:text-lime-300'>
         {nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/>}
