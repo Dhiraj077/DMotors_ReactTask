@@ -1,0 +1,33 @@
+.custom-page {
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .custom-page {
+    padding: 40px;
+  }
+
+  .lg:flex {
+    flex-wrap: wrap;
+  }
+
+  /* .lg:w-1/2 {
+    width: 50%;
+  } */
+
+  .ml-20 {
+    margin-left: 20px;
+  }
+
+  .mt-10 {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .custom-page {
+    padding: 60px;
+  }
+}
+
+

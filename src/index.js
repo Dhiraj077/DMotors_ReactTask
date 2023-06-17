@@ -9,6 +9,7 @@ import Company from './pages/company';
 import Test from './pages/test';
 import Services from './pages/Services';
 import Custom from './pages/custom'
+import Cart from './pages/Cart'
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
   {
     path: "test",
     element: <Test/>,
+  },
+  {
+    path: "cart",
+    element: <Cart/>,
   },
   {
     path: "custom",

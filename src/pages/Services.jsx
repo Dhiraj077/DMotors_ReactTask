@@ -115,7 +115,7 @@ const Services = () => {
                         <div class="flex flex-wrap mb-12">
                             <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0">
                                 <div class="relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg">
-                                    <img className=" w-full rounded-lg shadow-lg" src={require('../images/img_29.jpg')} alt="img" />
+                                    <img className=" w-full rounded-lg z-auto shadow-lg" src={require('../images/img_29.jpg')} alt="img" />
                                     <a href="#!">
                                         <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"></div>
                                     </a>
